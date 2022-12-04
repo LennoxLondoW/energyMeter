@@ -1,0 +1,96 @@
+[21-Nov-2022 17:01:46 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php:66
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php(66): abs('-3650 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_all.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php on line 66
+[21-Nov-2022 17:01:53 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php:66
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php(66): abs('-3650 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_all.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php on line 66
+[21-Nov-2022 17:01:58 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php:66
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php(66): abs('-3650 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_all.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php on line 66
+[21-Nov-2022 17:02:49 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_equipmentControler.php:52
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_equipmentControler.php(52): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_equipment.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_equipmentControler.php on line 52
+[21-Nov-2022 17:03:04 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:03:20 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:03:34 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:03:55 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:04:37 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:04:42 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:08:07 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_meterControler.php:49
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_meterControler.php(49): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_meter.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_meterControler.php on line 49
+[21-Nov-2022 17:08:14 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:08:23 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:08:26 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:08:28 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php:38
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php(38): abs('-365 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_price.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_priceControler.php on line 38
+[21-Nov-2022 17:13:42 UTC] PHP Fatal error:  Uncaught TypeError: abs(): Argument #1 ($num) must be of type int|float, string given in /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php:66
+Stack trace:
+#0 /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php(66): abs('-3650 days')
+#1 /home/feedafri/public_html/energy_meter/views/analytics_all.php(3): require_once('/home/feedafri/...')
+#2 {main}
+  thrown in /home/feedafri/public_html/energy_meter/controlers/analytics_allControler.php on line 66

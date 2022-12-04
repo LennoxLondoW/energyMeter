@@ -1,0 +1,263 @@
+RewriteEngine On
+
+
+# RewriteBase /
+
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ https://www.lennox.anchortrends.com/$1 [R,L]
+
+
+# rewritecond %{http_host} ^lennox.anchortrends.com [nc]
+# rewriterule ^(.*)$ http://www.lennox.anchortrends.com/$1 [r=301,nc]
+
+# RewriteRule ^/?$ views/home.php [L]
+
+
+#dealing with home
+Rewriterule ^home/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/home.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^home/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/home.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^home/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/home.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^home/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/home.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^home/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/home.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^home/(.+)/(.+)/(.+)/(.+) views/home.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^home/(.+)/(.+) views/home.php?$1=$2 [NC,L]
+Rewriterule ^home views/home.php [NC,L]
+#/dealing with home
+
+#dealing with sign_up
+Rewriterule ^sign_up/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_up.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^sign_up/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_up.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^sign_up/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_up.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^sign_up/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_up.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^sign_up/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_up.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^sign_up/(.+)/(.+)/(.+)/(.+) views/sign_up.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^sign_up/(.+)/(.+) views/sign_up.php?$1=$2 [NC,L]
+Rewriterule ^sign_up views/sign_up.php [NC,L]
+#/dealing with sign_up
+
+#dealing with verify_account
+Rewriterule ^verify_account/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/verify_account.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^verify_account/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/verify_account.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^verify_account/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/verify_account.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^verify_account/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/verify_account.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^verify_account/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/verify_account.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^verify_account/(.+)/(.+)/(.+)/(.+) views/verify_account.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^verify_account/(.+)/(.+) views/verify_account.php?$1=$2 [NC,L]
+Rewriterule ^verify_account views/verify_account.php [NC,L]
+#/dealing with verify_account
+
+#dealing with sign_in
+Rewriterule ^sign_in/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_in.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^sign_in/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_in.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^sign_in/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_in.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^sign_in/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_in.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^sign_in/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/sign_in.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^sign_in/(.+)/(.+)/(.+)/(.+) views/sign_in.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^sign_in/(.+)/(.+) views/sign_in.php?$1=$2 [NC,L]
+Rewriterule ^sign_in views/sign_in.php [NC,L]
+#/dealing with sign_in
+
+#dealing with reset_password
+Rewriterule ^reset_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/reset_password.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^reset_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/reset_password.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^reset_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/reset_password.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^reset_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/reset_password.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^reset_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/reset_password.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^reset_password/(.+)/(.+)/(.+)/(.+) views/reset_password.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^reset_password/(.+)/(.+) views/reset_password.php?$1=$2 [NC,L]
+Rewriterule ^reset_password views/reset_password.php [NC,L]
+#/dealing with reset_password
+
+#dealing with change_password
+Rewriterule ^change_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/change_password.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^change_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/change_password.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^change_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/change_password.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^change_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/change_password.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^change_password/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/change_password.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^change_password/(.+)/(.+)/(.+)/(.+) views/change_password.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^change_password/(.+)/(.+) views/change_password.php?$1=$2 [NC,L]
+Rewriterule ^change_password views/change_password.php [NC,L]
+#/dealing with change_password
+
+
+#dealing with donate
+Rewriterule ^donate/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/donate.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^donate/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/donate.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^donate/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/donate.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^donate/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/donate.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^donate/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/donate.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^donate/(.+)/(.+)/(.+)/(.+) views/donate.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^donate/(.+)/(.+) views/donate.php?$1=$2 [NC,L]
+Rewriterule ^donate views/donate.php [NC,L]
+#/dealing with donate
+
+#dealing with contact
+Rewriterule ^contact/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/contact.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^contact/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/contact.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^contact/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/contact.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^contact/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/contact.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^contact/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/contact.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^contact/(.+)/(.+)/(.+)/(.+) views/contact.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^contact/(.+)/(.+) views/contact.php?$1=$2 [NC,L]
+Rewriterule ^contact views/contact.php [NC,L]
+#/dealing with contact
+
+#dealing with about
+Rewriterule ^about/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/about.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^about/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/about.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^about/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/about.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^about/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/about.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^about/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/about.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^about/(.+)/(.+)/(.+)/(.+) views/about.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^about/(.+)/(.+) views/about.php?$1=$2 [NC,L]
+Rewriterule ^about views/about.php [NC,L]
+#/dealing with about
+
+
+#dealing with view_users
+Rewriterule ^view_users/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/view_users.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^view_users/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/view_users.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^view_users/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/view_users.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^view_users/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/view_users.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^view_users/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/view_users.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^view_users/(.+)/(.+)/(.+)/(.+) views/view_users.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^view_users/(.+)/(.+) views/view_users.php?$1=$2 [NC,L]
+Rewriterule ^view_users views/view_users.php [NC,L]
+#/dealing with view_users
+
+#dealing with privacy_policy
+Rewriterule ^privacy_policy/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/privacy_policy.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^privacy_policy/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/privacy_policy.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^privacy_policy/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/privacy_policy.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^privacy_policy/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/privacy_policy.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^privacy_policy/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/privacy_policy.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^privacy_policy/(.+)/(.+)/(.+)/(.+) views/privacy_policy.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^privacy_policy/(.+)/(.+) views/privacy_policy.php?$1=$2 [NC,L]
+Rewriterule ^privacy_policy views/privacy_policy.php [NC,L]
+#/dealing with privacy_policy
+
+#dealing with terms_and_conditions
+Rewriterule ^terms_and_conditions/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/terms_and_conditions.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^terms_and_conditions/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/terms_and_conditions.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^terms_and_conditions/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/terms_and_conditions.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^terms_and_conditions/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/terms_and_conditions.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^terms_and_conditions/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/terms_and_conditions.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^terms_and_conditions/(.+)/(.+)/(.+)/(.+) views/terms_and_conditions.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^terms_and_conditions/(.+)/(.+) views/terms_and_conditions.php?$1=$2 [NC,L]
+Rewriterule ^terms_and_conditions views/terms_and_conditions.php [NC,L]
+#/dealing with terms_and_conditions
+
+#dealing with admin
+Rewriterule ^admin/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/admin.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^admin/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/admin.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^admin/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/admin.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^admin/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/admin.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^admin/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/admin.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^admin/(.+)/(.+)/(.+)/(.+) views/admin.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^admin/(.+)/(.+) views/admin.php?$1=$2 [NC,L]
+Rewriterule ^admin views/admin.php [NC,L]
+#/dealing with admin
+
+#dealing with equipment
+Rewriterule ^equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/equipment.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/equipment.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/equipment.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/equipment.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/equipment.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^equipment/(.+)/(.+)/(.+)/(.+) views/equipment.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^equipment/(.+)/(.+) views/equipment.php?$1=$2 [NC,L]
+Rewriterule ^equipment views/equipment.php [NC,L]
+#/dealing with equipment
+
+#dealing with meters
+Rewriterule ^meters/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/meters.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^meters/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/meters.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^meters/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/meters.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^meters/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/meters.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^meters/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/meters.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^meters/(.+)/(.+)/(.+)/(.+) views/meters.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^meters/(.+)/(.+) views/meters.php?$1=$2 [NC,L]
+Rewriterule ^meters views/meters.php [NC,L]
+#/dealing with meters
+
+
+#dealing with analytics_all
+Rewriterule ^analytics_all/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_all.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^analytics_all/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_all.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^analytics_all/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_all.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^analytics_all/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_all.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^analytics_all/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_all.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^analytics_all/(.+)/(.+)/(.+)/(.+) views/analytics_all.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^analytics_all/(.+)/(.+) views/analytics_all.php?$1=$2 [NC,L]
+Rewriterule ^analytics_all views/analytics_all.php [NC,L]
+#/dealing with analytics_all
+
+#dealing with analytics_equipment
+Rewriterule ^analytics_equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_equipment.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^analytics_equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_equipment.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^analytics_equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_equipment.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^analytics_equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_equipment.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^analytics_equipment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_equipment.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^analytics_equipment/(.+)/(.+)/(.+)/(.+) views/analytics_equipment.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^analytics_equipment/(.+)/(.+) views/analytics_equipment.php?$1=$2 [NC,L]
+Rewriterule ^analytics_equipment views/analytics_equipment.php [NC,L]
+#/dealing with analytics_equipment
+
+#dealing with analytics_meter
+Rewriterule ^analytics_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_meter.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^analytics_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_meter.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^analytics_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_meter.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^analytics_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_meter.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^analytics_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_meter.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^analytics_meter/(.+)/(.+)/(.+)/(.+) views/analytics_meter.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^analytics_meter/(.+)/(.+) views/analytics_meter.php?$1=$2 [NC,L]
+Rewriterule ^analytics_meter views/analytics_meter.php [NC,L]
+#/dealing with analytics_meter
+
+#dealing with entries_meter
+Rewriterule ^entries_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_meter.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^entries_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_meter.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^entries_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_meter.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^entries_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_meter.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^entries_meter/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_meter.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^entries_meter/(.+)/(.+)/(.+)/(.+) views/entries_meter.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^entries_meter/(.+)/(.+) views/entries_meter.php?$1=$2 [NC,L]
+Rewriterule ^entries_meter views/entries_meter.php [NC,L]
+#/dealing with entries_meter
+
+#dealing with entries_equpment
+Rewriterule ^entries_equpment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_equpment.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^entries_equpment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_equpment.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^entries_equpment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_equpment.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^entries_equpment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_equpment.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^entries_equpment/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_equpment.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^entries_equpment/(.+)/(.+)/(.+)/(.+) views/entries_equpment.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^entries_equpment/(.+)/(.+) views/entries_equpment.php?$1=$2 [NC,L]
+Rewriterule ^entries_equpment views/entries_equpment.php [NC,L]
+#/dealing with entries_equpment
+
+#dealing with entries_expense
+Rewriterule ^entries_expense/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_expense.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^entries_expense/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_expense.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^entries_expense/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_expense.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^entries_expense/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_expense.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^entries_expense/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/entries_expense.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^entries_expense/(.+)/(.+)/(.+)/(.+) views/entries_expense.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^entries_expense/(.+)/(.+) views/entries_expense.php?$1=$2 [NC,L]
+Rewriterule ^entries_expense views/entries_expense.php [NC,L]
+#/dealing with entries_expense
+
+#dealing with analytics_price
+Rewriterule ^analytics_price/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_price.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12&$13=$14 [NC,L]
+Rewriterule ^analytics_price/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_price.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10&$11=$12 [NC,L]
+Rewriterule ^analytics_price/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_price.php?$1=$2&$3=$4&$5=$6&$7=$8&$9=$10 [NC,L]
+Rewriterule ^analytics_price/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_price.php?$1=$2&$3=$4&$5=$6&$7=$8 [NC,L]
+Rewriterule ^analytics_price/(.+)/(.+)/(.+)/(.+)/(.+)/(.+) views/analytics_price.php?$1=$2&$3=$4&$5=$6 [NC,L]
+Rewriterule ^analytics_price/(.+)/(.+)/(.+)/(.+) views/analytics_price.php?$1=$2&$3=$4 [NC,L]
+Rewriterule ^analytics_price/(.+)/(.+) views/analytics_price.php?$1=$2 [NC,L]
+Rewriterule ^analytics_price views/analytics_price.php [NC,L]
+#/dealing with analytics_price
+
+Options -Indexes 
+ErrorDocument 404 https://www.lennox.anchortrends.com/_/energy_meter/home
+ErrorDocument 403 hhttps://www.lennox.anchortrends.com/_/energy_meter/home

